@@ -1,0 +1,17 @@
+{
+  "name": "Hourproof",
+  "short_name": "Hourproof",
+  "description": "Teach one hour. Leave a proof.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#e7e0d0",
+  "theme_color": "#1b4634",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+:root {
+  --bg: #e7e0d0;
+  --surface: #fffdf8;
+  --surface-muted: #f4efe6;
+  --fg: #1c1915;
+  --muted: #534c43;
+  --line: #c4b49a;
+  --control: #6f6456;
+  --accent: #1b4634;
+  --accent-hover: #143728;
+  --accent-fg: #f7f4ec;
+  --clay: #8f3412;
+  --danger: #9f1239;
+  --ring: #1b4634;
+  --shadow: 0 18px 40px -24px rgb(48 36 20 / 0.45);
+  --hero-wash: rgb(143 52 18 / 0.16);
+  --hero-wash-2: rgb(27 70 52 / 0.14);
+  --font-sans: 'Outfit', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Fraunces', 'Iowan Old Style', Palatino, Georgia, serif;
+  --font-mono: ui-monospace, 'Cascadia Code', 'Segoe UI Mono', monospace;
+  --header-h: 4rem;
+  --radius: 1.5rem;
+  color-scheme: light;
+}
+
+:root.dark {
+  --bg: #0e100c;
+  --surface: #242b22;
+  --surface-muted: #2e362b;
+  --fg: #f6f1e6;
+  --muted: #d0c4b2;
+  --line: #667462;
+  --control: #c8bfb0;
+  --accent: #d7ead4;
+  --accent-hover: #e8f5e6;
+  --accent-fg: #102119;
+  --clay: #f3b48f;
+  --danger: #ffc9d0;
+  --ring: #f0c27a;
+  --shadow: 0 18px 40px -24px rgb(0 0 0 / 0.7);
+  --hero-wash: rgb(243 180 143 / 0.14);
+  --hero-wash-2: rgb(215 234 212 / 0.07);
+  color-scheme: dark;
+}

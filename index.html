@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hourproof — Teach one hour. Leave a proof.</title>
+    <meta
+      name="description"
+      content="Hourproof matches developers who can teach each other. Offer an hour you know, learn an hour you want, and leave a small public proof."
+    />
+    <meta name="author" content="Hourproof" />
+    <meta name="theme-color" content="#e7e0d0" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./favicon.svg" />
+    <link rel="manifest" href="./site.webmanifest" />
+    <link rel="canonical" href="https://hourproof.example/" />
+    <meta property="og:site_name" content="Hourproof" />
+    <meta property="og:title" content="Hourproof — Teach one hour. Leave a proof." />
+    <meta
+      property="og:description"
+      content="A developer skill exchange. Teach an hour, learn an hour, and leave a public proof of the work."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://hourproof.example/" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Hourproof — Teach one hour. Leave a proof." />
+    <meta
+      name="twitter:description"
+      content="A developer skill exchange. Teach an hour, learn an hour, and leave a public proof of the work."
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Hourproof",
+        "url": "https://hourproof.example/",
+        "description": "Hourproof matches developers who can teach each other an hour at a time and leave a public proof."
+      }
+    </script>
+    <!--
+      Theme boot: keep the storage key and colors in sync with src/lib/theme.js.
+      This runs before CSS so a stored or system dark theme does not flash light.
+    -->
+    <style>
+      :root {
+        background: #e7e0d0;
+        color: #1c1915;
+        color-scheme: light;
+      }
+      :root.dark {
+        background: #0e100c;
+        color: #f6f1e6;
+        color-scheme: dark;
+      }
+    </style>
+    <script>
+      (function () {
+        var theme = 'light';
+        try {
+          var stored = localStorage.getItem('hourproof-theme');
+          if (stored === 'light' || stored === 'dark') theme = stored;
+          else if (window.matchMedia('(prefers-color-scheme: dark)').matches) theme = 'dark';
+        } catch (error) {
+          theme = 'light';
+        }
+        var root = document.documentElement;
+        root.classList.toggle('dark', theme === 'dark');
+        root.style.colorScheme = theme;
+        var meta = document.querySelector('meta[name="theme-color"]');
+        if (meta) meta.setAttribute('content', theme === 'dark' ? '#0e100c' : '#e7e0d0');
+      })();
+    </script>
+  </head>
+  <body>
+    <noscript>
+      <p style="padding: 1.5rem; font-family: Georgia, serif">
+        Hourproof needs JavaScript to show this page.
+      </p>
+    </noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
